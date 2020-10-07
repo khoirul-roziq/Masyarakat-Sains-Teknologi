@@ -156,7 +156,9 @@
     list-style-type: none;
 }
 
-.menu-list {
+.menu-list {.display-none {
+    display: none;
+}
     margin-top: 20px;
 }
 
@@ -312,3 +314,6 @@ footer div {
     z-index: 999;
 }
 
+.display-none {
+    display: none;
+}
