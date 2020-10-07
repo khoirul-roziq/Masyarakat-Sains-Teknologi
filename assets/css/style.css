@@ -1,0 +1,314 @@
+
+/* navbar */
+.navbar {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.search {
+    width: 50%;
+}
+
+.brand {
+    margin-left: 3%;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.brand :last-child {
+    text-decoration: none;
+    color: thistle;
+}
+
+.brand :last-child:active {
+    font-weight: bold;
+}
+
+#user {
+    position: absolute;
+    color: white;
+    right: 100px;
+}
+
+/* end navbar */
+
+/* menubar */
+
+.menu {
+    position: fixed;
+    top: 61px;
+    bottom: 0;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(233, 231, 231);
+    transform: translateX(-100%);
+    transition: all 0.8s;
+    z-index: 2;
+}
+
+.menu.slide {
+    transform: translateX(0);
+}
+
+.menu a {
+    color: rgb(233, 231, 231);
+    text-decoration: none;
+    
+}
+
+.menu-toggle {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 3px 3px 0;
+    top: 10px;
+    right: -40px;
+    opacity: 1;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    /* background-color: rgba(16, 27, 187, 0.8); */
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* hamburger menu animation */
+
+.menu-toggle :nth-child(2) {
+    transform-origin: 100% 0;
+}
+
+.menu-toggle :last-child {
+    transform-origin: 100% 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(-45deg) translate(-4px, -5px);
+}
+
+.menu-toggle input:checked ~ :nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:last-child {
+    transform: rotate(45deg) translate(-4px, 5px);
+}
+
+.menu-toggle input:checked ~ .menu-toggle {
+    right: 40px;
+}
+
+/* end hamburger menu animation */
+
+/* profile */
+
+.profile {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.photo {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+/* end profile */
+
+.menu ul li img {
+    width: 50px;
+}
+
+.menu ul li {
+    margin: 10px 50px;
+    list-style-type: none;
+}
+
+.menu-list {
+    margin-top: 20px;
+}
+
+/* end menubar */
+
+/* main */
+
+main h1 {
+    margin-top: 40px;
+}
+hr {
+    width: 400px;
+    border-top: 3px solid #333;
+    margin: 10px auto 30px;
+}
+
+/* end main */
+
+/* carousel/ slider */
+
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+/* end carousel/ slider */
+
+/* footer */
+
+footer div {
+    margin-bottom: 500px;
+}
+
+/* end footer */
+
+/* slider */
+
+.kontainer {
+    width: 70%;
+    height: 400px;
+    margin: 10px 40px;
+}
+
+.kontainer h2 {
+    margin: 0 50px;
+}
+
+.box {
+    width: 220px;
+    height: 240px;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5px;
+}
+.it {
+    margin-left: 25%;
+}
+/* end slider */
+
+/* login */
+
+.login {
+    position: fixed;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    z-index: 999;
+    padding: 30px;
+    top: 20px;
+    left: 25%;
+    border-radius: 5px 5px 0 0;
+}
+
+.login .form-switch {
+    margin-bottom: 20px;
+}
+
+.captcha input {
+    width: 40%;
+}
+
+.login .btn {
+    margin-right: 10px;
+}
+
+.link-reg {
+    position: fixed;
+    width: 50%;
+    height: 22%;
+    background-color: white;
+    left: 25%;
+    bottom: 20px;
+    z-index: 999;
+    padding: 10px 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.btn-create {
+    align-self: center;
+}
+
+.close {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.692);
+    right: -30px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+}
+
+.close span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(211, 14, 14);
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.close span:nth-child(2) {
+    transform-origin: 100%;
+    transform: rotate(-45deg) translate(-4px, -1px);
+}
+
+.close span:last-child {
+    transform-origin: 0;
+    transform: rotate(45deg) translate(3px, -4px);
+}
+
+.close input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* end login */
+
+.bg-transparan {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
