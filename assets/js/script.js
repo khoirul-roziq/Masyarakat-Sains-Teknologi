@@ -16,3 +16,12 @@ $(document).ready(function() {
         } 
     });  
   });
+
+// display login
+
+const btnClose = document.querySelector('.close input');
+const displayLogin = document.querySelector('.bg-transparan');
+
+btnClose.addEventListener('click', function() {
+    displayLogin.classList.toggle('display-none');
+});
